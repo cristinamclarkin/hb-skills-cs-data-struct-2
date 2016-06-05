@@ -1,0 +1,76 @@
+Part 1: Discussion Questions
+
+
+
+Recursion
+
+1.)In your own words, what is Recursion?
+    Recursive solutions provide a base case and a recursive step. The solution uses a function to call itself,
+    instead of using a loop to iterate. The function will run until the base case is triggered.
+
+2.)Why is it necessary to have a Base Case?
+    A base case is a single case for which the answer is known and can be expressed without using recursion. It is necessary to have a base case to prevent a recursive solution from running forever. 
+
+
+Graphs
+
+1.)What is a Graph?
+    A Graph is a collection of nodes (or "vertices") that represent points of connection. Each node is connected via an edge. The relationships between nodes can be directed or undirected and nodes in graphs can have cyclic or acyclic relationships.
+
+2.) How is a Graph different from a Tree?
+    Though a Tree is technically a Graph, a Tree is a Graph that has no cycles (a cycle being a path in the graph that starts and ends at the same node).Graphs contain loops (“cycles”), and the relationships can be directed or non-directed. 
+
+3.)Give an example of somthing that would be good to model with a Graph.
+    Facebook's network of an individual, his/her friends, and their friends etc, could be mapped as a graph. Each friend would be a node and one's relationship to another would be an edge. This would be an example of an undirected graph.
+
+
+Performance of Different Data Structures
+
+Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning. There are Xs in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a Stack, or pop from the end of a Queue). We’ve provided the first few answers for you.
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure                  Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List(Array)              O(1)    O(n)    O(1)   O(n)    O(n)   O(1)
+Linked List                     O(n)    O(n)    O(1)   O(1)    O(1)   O(n)
+Doubly-Linked List              O(n)    O(n)    O(1)   O(1)    O(1)   O(1)
+Queue (as Array)                  X       X     O(1)    X      O(n)    X
+Queue (as LL or DLL)              X       X     O(1)    X      O(1)
+Stack (as Array, LL, or DLL)      X       X     O(1)    X       X     O(1)
+Deque (as DLL)                    X       X     O(1)   O(1)    O(1)   O(1)
+
+
+
+Fill in Runtime and Memory:
+
+The answers for Dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get         Add     Delete  Iterate  Memory
+Dictionary (Hash Map)   O(1)        O(1)    O(1)    O(n)     medium
+Set (Hash Map)          O(1)        O(1)    O(1)    O(n)     medium
+Binary Search Tree      O(log n)    O(n)    O(n)    O(1)     little  
+Tree                    O(n)        O(1)    O(1)    O(1)     little
+
+
+
+
+Sorting:
+
+1.)Describe in words how the Bubble Sort algorithm works.
+      Using Bubble Sort, this alogorithm steps through an unsorted list, compares each pair of adjacent items and swaps them if they are in the wrong order. This process continues until no further swaps are needed, meaning the list has been sorted.
+
+2.)Describe in words how the Merge Sort algorithm works.
+    Beginning with 2 sorted lists, initialize a third empty list. Compare the first element in each sorted list, removing the lower of the two items and adding it to the empty list. Continue comparing the first item of each list and appending the smaller item until both lists are empty. 
+
+3.)Describe in words how the Quick Sort algorithm works.
+    Quicksort implements the idea of a partition. This means that there is a randomly selected pivot, x. Using x, we organize the list or array by numbers larger than x or smaller than x. Once the pivot is in it's rightful place, theres is a pivot selected for each bucket on either side of the pivot and the process continues.
+
+
+Git Branching:
+
+1.)Give an instance when you would use git branching.
+    Git branching can be used in the event that there is a new feature you would like to work on in a "safe" environment so as not to break your existing code. For example, Facebook has one branch that reflects the code that it's users are currently using and branches that are in development potentially to be used in future implementations.
+
+2.)What is a pull request?
+    A pull request asks the project's owner to checkout your branch and merge it into a specific branch of the project owenr's code. This is often how one would commit code.
+
